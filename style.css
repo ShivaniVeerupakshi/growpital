@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background:rgb(101, 92, 205);
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 2px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 50px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -125px;
+  top: 17px;
+  font-size: 30px;
+  color:burlywood;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+body{
+    background-color: black;
+}
+
+
+
+* {
+  box-sizing:content-box;
+}
+body,
+html {
+  height: 50%;
+  min-height: 50%;
+}
+
+body {
+  font-family: 'Roboto',
+  sans-serif;
+  margin: 0;
+  background-color: springgreen;
+}
+.form-header {
+  height: 60px;
+  padding: 10px 10px 0;
+  border-bottom: 1px springgreen;
+}
+
+.form-body {
+  height: 340px;
+  padding: 10px 10px 10px;
+}
+
+
+
+
+
+
+
+.nav{
+    font-size: 125%;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.container{
+    position:relative;
+    width:500px;
+    height:50px;
+    margin:240px auto;
+}
+.container .box{
+    position:absolute;
+    width:calc(300px-30px);
+    height: calc(15000px-30px);
+    background:green;
+    float:left;
+    margin:15px;
+    box-sizing:content-box;
+    border-radius:10px;
+    text-align: center;
+}
+.down{
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+}
+
+
+
+
+
+.padding{
+  padding: 5rem !important;
+  padding-top: 125%;
+  padding-bottom: 200%;
+  align-content: center;
+}
+.form-control:focus {
+ box-shadow: 0px 0px 0px 0px #ffffff !important;
+ border-color: white;
+ text-align: center;
+ border-width: 2cm;
+}
+.card-body{
+  color: rgba(27, 91, 201, 0.947);
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  top: -50%;
+}
+
+
+
+body{
+    background-color: black;
+}
